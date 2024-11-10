@@ -1,0 +1,132 @@
+## ---------------------------------- 
+## SHORTCODES
+## ----------------------------------
+
+The "Add to playlist" button will be added to videos automatically per default. This setting can be turned off with the filter 'fvpupe_settings_auto_add_userplaylist_button' by returning false (more information under the "FILTER" section in this document).
+
+To add or remove the button on individual cases you can add a parameter to the FV Player shortcode with the value true or false, like this:
+[fvplayer id="1" userplaylist_button="true"]. 
+
+If you want to include the "Add to playlist" button in a custom location, not directly attached to the video, you can use the following shortcode (note that this will need the video ID or video src), like this:
+[fvplayer module="userplaylist_button" video_id="2"]
+[fvplayer module="userplaylist_button" video_id="https://vimeo.com/1234567"]
+
+To show the current logged in user's playlists the following shortcode can be used:
+[fvplayer module="userplaylists"]
+
+In a template for the post type fvpupe_playlists you can use the following shortcode to show all information about the specific playlist: 
+[fvplayer module="userplaylist"]
+
+If you don't want to use the existing layout you can use shortcode for the individual parts of the playlist single page to build your own layout, like this:
+[fvplayer module="userplaylist" content="playlist"]
+[fvplayer module="userplaylist" content="title"]
+[fvplayer module="userplaylist" content="author"]
+[fvplayer module="userplaylist" content="description"]
+
+If you want to show a playlist with a particular ID on a page, you can add use the ID parameter, like this:
+[fvplayer module="userplaylist" id="3"]
+
+If you want to change the list style of the videos you can use any of the FV Player default styles found here: https://foliovision.com/player/developers/shortcode-parameters#playlists
+Like this: 
+[fvplayer module="userplaylist" liststyle="tabs"]
+
+
+
+## ---------------------------------- 
+## FILTERS
+## ----------------------------------
+
+Below is a list of filter names you can use. A filter is a way to change some settings in the plugin. Place the code like the following example somewhere in your own theme or other appropriate place.
+
+add_filter('the_filter_name_found_below', function() {
+	return 'Your custom value';
+});
+
+please not that if the filter is used to return true/false (bool) don't include any " or ' characters surround the value, those are for strings. Like this: 
+
+add_filter('the_filter_name_found_below', function() {
+	return false;
+});
+
+
+# TEXT PHRASES (all text phrases should return strings)
+
+fvpupe_phrase_save
+fvpupe_phrase_loading
+fvpupe_phrase_add_to_playlist
+fvpupe_phrase_create_new_playlist
+fvpupe_phrase_cancel
+fvpupe_phrase_playlist_name
+fvpupe_phrase_add_playlist
+fvpupe_phrase_save_playlist
+fvpupe_phrase_yes
+fvpupe_phrase_delete_playlist
+fvpupe_phrase_confirm_delete_playlist
+fvpupe_phrase_edit_playlist
+fvpupe_phrase_description
+fvpupe_phrase_videos
+fvpupe_phrase_playlist_is_empty
+fvpupe_phrase_order_saved
+fvpupe_phrase_playlist_deleted
+fvpupe_phrase_no_playlists_found
+fvpupe_phrase_error_occured
+fvpupe_phrase_video_removed_from
+fvpupe_phrase_need_login_to_add_to_playlist
+fvpupe_phrase_no_video_found
+fvpupe_phrase_changes_saved
+fvpupe_phrase_video_added_to
+fvpupe_phrase_need_login_to_create_playlist
+fvpupe_phrase_playlist_name_already_exists
+fvpupe_phrase_not_your_playlist
+fvpupe_phrase_playlist_saved
+fvpupe_phrase_playlist_name_mandatory
+fvpupe_phrase_need_login_to_add_to_playlist
+fvpupe_phrase_playlist_not_found
+fvpupe_phrase_playlist_created_by
+fvpupe_phrase_edit
+fvpupe_phrase_delete
+
+
+
+# SETTINGS
+
+fvpupe_setting_single_template_playlist_style (return string)
+fvpupe_settings_auto_add_userplaylist_button (return bool)
+
+
+# CSS CLASSES (all CSS classes should return strings)
+
+fvpupe_css_class_add_to_playlist_button (return string)
+
+
+
+# CUSTOM HTML (all custom HTML should return strings)
+
+fvpupe_html_before_add_to_playlist_button_text
+fvpupe_html_after_add_to_playlist_button_text
+
+
+## ---------------------------------- 
+## ACTIONS
+## ----------------------------------
+
+Actions are similar to filters and can be used like this:
+
+add_action('the_action_name_found_below', function() {
+	echo '<div class="info">My custom information!</div>';
+});
+
+# Actions in the default archive template
+
+fvpupe_template_archive_before_wrapper
+fvpupe_template_archive_before_content
+fvpupe_template_archive_after_content
+fvpupe_template_archive_after_wrapper
+
+
+# Actions in the default single template
+
+fvpupe_template_single_before_wrapper
+fvpupe_template_single_before_content
+fvpupe_template_single_after_content
+fvpupe_template_single_after_wrapper

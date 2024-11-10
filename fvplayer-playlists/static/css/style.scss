@@ -1,0 +1,486 @@
+.fvpupe-wrapper {
+	margin: 40px auto;
+	width: 90%;
+	max-width: 1100px;
+}
+
+.fvpupe-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.fvpupe-button {
+	display: inline-block;
+	line-height: 1;
+	padding: 10px 15px;
+	background: #808080;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 15px;
+	margin-top: 15px;
+
+	&.fvpupe-positive {
+		background: #578025;
+	}
+
+	&.fvpupe-negative {
+		background: #802525;
+	}
+}
+
+.flowplayer,
+.fvp-playlist-thumb-img {
+	border: 1px solid #e4e4e4;
+	border-radius: 6px;
+	overflow: hidden;	
+
+	&:hover {
+		border-color: #000;
+	}
+}
+
+.fvp-playlist-thumb-img {
+	margin: 10px 5px 0 5px;
+}
+
+.fvpupe-sortable-placeholder,
+.fvpupe-sortable-video {
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	min-height: 36px;
+}
+
+.fvpupe-edit-playlist-video-list-wrapper {
+	margin-top: 30px;
+
+	.fvpupe-edit-playlist-video-list {
+		line-height: 1;
+		margin-top: 10px;
+
+		li {
+			padding: 10px 15px 10px 30px;
+			border: 1px solid #e4e4e4;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			font-size: 15px;
+			cursor: move;
+			position: relative;
+			touch-action: none; // Förhindra standard touch-beteenden
+
+			.fvpupe-order-handle-updown {
+				position: absolute;
+				top: 50%;
+				left: 10px;
+				transform: translateY(-50%);
+				height: 20px;
+				touch-action: none; // Förhindra standard touch-beteenden
+
+				svg {
+					display: block;
+					width: auto;
+					height: 100%;
+
+					path {
+						fill: #ccc;
+					}
+				}
+			}
+
+			.fvpupe-delete-video {
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				transform: translateY(-50%);
+				height: 14px;
+				display: none;
+				cursor: pointer;
+
+				svg {
+					display: block;
+					width: auto;
+					height: 100%;
+
+					path {
+						fill: #802525;
+					}
+				}
+			}
+
+			&:hover {
+				border-color: #000;
+
+				.fvpupe-delete-video {
+					display: block;
+				}
+
+				.fvpupe-order-handle-updown {
+					svg {
+						path {
+							fill: #000;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.fvpupe-userplaylists {
+
+	.fvpupe-userplaylist {
+		
+		position: relative;
+		padding: 10px;
+		background: #fff;
+		box-shadow: 0 0 20px rgba(0,0,0,0.1);
+		margin-top: 20px;
+		border-radius: 8px;
+		touch-action: none; // Förhindra standard touch-beteenden
+
+		.fvpupe-userplaylist-content-wrapper {
+
+			display: grid;
+			grid-gap: 10px;
+
+			@media screen and (min-width: 600px) {	
+				grid-template-columns: 100px 1fr 240px;				
+			}
+
+			@media screen and (max-width: 600px) {
+
+				grid-template-columns: 80px 1fr;
+
+				.fvpupe-userplaylist-buttons {
+					grid-column-start: 1;
+					grid-column: span 2;
+				}
+			}
+		}
+
+		h3 {
+			font-size: 22px;
+			margin: 10px 0 10px 0;
+		}
+
+		.fvpupe-userplaylist-info {
+			a {
+				color: #000;
+			}
+		}
+
+		.fvpupe-userplaylist-buttons {
+
+			position: relative;
+
+			@media screen and (min-width: 600px) {
+				text-align: right;
+
+				.fvpupe-userplaylist-buttons-inner {
+					top: 50%;
+					right: 10px;
+					position: absolute;
+					transform: translateY(-50%);
+				}
+
+				.fvpupe-button {
+					margin: 0 0 0 10px;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				.fvpupe-button {
+					margin: 0 10px 0 0;
+				}
+			}
+		}
+
+		.fvpupe-playlist-cover-wrapper {
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.fvpupe-playlist-cover-image {
+				background-position: center center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				border: none;
+				border-radius: 8px;
+			}
+		}
+
+		.fvpupe-order-handle {
+			width: 25px;
+			height: 25px;
+			background: #000;
+			border-radius: 100px;
+			position: absolute;
+			z-index: 2;
+			top: -12.5px;
+			left: -12.5px;
+			cursor: move;
+			display: none;
+			touch-action: none; // Förhindra standard touch-beteenden
+
+			svg {
+				width: 70%;
+				height: auto;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				path {
+					fill: #fff;
+				}
+			}
+		}
+
+		&:hover {
+			.fvpupe-order-handle {
+				display: block;
+			}
+		}
+	}
+}
+
+.fvpupe-single-playlist-wrapper {
+	display: grid;
+	grid-template-columns: 60% 1fr;
+	grid-gap: 40px;
+
+	h1 {
+		margin-bottom: 5px;
+	}
+
+	.fvpupe-single-playlist-author {
+		margin-bottom: 15px;
+		font-style: italic;
+	}
+
+	@media screen and (max-width: 800px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.fvpupe-empty-video {
+	background: rgba(0,0,0,0.1);
+	position: relative;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.fvpupe-empty-video-text {
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 22px;
+		text-align: center;
+		width: 80%;
+	}
+}
+
+.fvpupe-modal-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	display: none;
+
+	.fvpupe-modal-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10;
+		background: rgba(#2B364E, 0.6);
+	}
+
+	.fvpupe-modal-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 20;
+		background: #fff;
+		padding: 50px;
+		border-radius: 10px;
+		box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+		width: 95%;
+		max-width: 600px;
+		overflow: auto;
+		max-height: 95vh;		
+
+		@media screen and (max-width: 600px) {
+			padding: 25px;
+		}
+
+		h2,
+		h3,
+		h4 {
+			margin-top: 0;
+			font-size: 24px;
+		}
+
+		h3 {
+			font-size: 20px;
+		}
+
+		h4 {
+			font-size: 17px;
+		}
+
+		input,
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #e4e4e4;
+			border-radius: 5px;
+			box-sizing: border-box;
+
+			&[type='checkbox'] {
+				width: auto;
+				padding: 0;
+				border: 0;
+				border-radius: 0;
+				display: inline-block;	
+			}
+		}
+
+		textarea {
+			height: 110px;
+		}
+
+		.disabled {
+			opacity: .3;
+		}
+
+		.fvpupe-input {
+			margin-bottom: 20px;
+
+			label {
+				display: block;
+			}
+		}
+
+		.fvpupe-playlist-select {			
+			margin: 0 0 20px 0;
+		}
+	}
+}
+
+.fvpupe-close-button {
+	border-radius: 100px;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 2;	
+	line-height: 0;
+	cursor: pointer;
+
+	&:after,
+	&:before {
+		content: '';
+		display: block;
+		width: 80%;
+		height: 2px;
+		background: #000;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	&:before {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+}
+
+.fvpupe-userplaylist-videos {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	margin-bottom: 40px;
+
+	.fvpupe-userplaylist-video {
+		border: 1px solid #e4e4e4;
+		border-radius: 8px;
+		overflow: hidden;
+		background: #f1f1f1;
+	}
+
+	.fvpupe-userplaylist-video .fvpupe-info {
+		padding: 20px;
+
+		h4 {
+			font-size: 18px;
+		}
+	}	
+
+	.fvpupe-userplaylist-video a {
+		text-decoration: none;		
+	}
+}
+
+.fvpupe-label {
+	margin-bottom: 10px;
+}
+
+.fvpupe-message-wrapper {
+	position: fixed;
+	z-index: 1100;
+	bottom: 10px;
+	left: 20px;	
+
+	.fvpupe-message {
+		margin-bottom: 10px;
+		background: #B892FF;
+		color: #fff;
+		padding: 15px 25px;
+		line-height: 1.4;
+		display: none;
+		border-radius: 5px;
+	}
+}
+
+.fvpupe-hidden {
+	display: none;
+}
+
+.fvpupe-cf::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+// Förbättra touch-hantering för mobila enheter
+@media (hover: none) and (pointer: coarse) {
+    .fvpupe-order-handle,
+    .fvpupe-order-handle-updown {
+        display: block !important;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .fvpupe-userplaylist,
+    .fvpupe-edit-playlist-video-list li {
+        user-select: none;
+        -webkit-user-select: none;
+    }
+}

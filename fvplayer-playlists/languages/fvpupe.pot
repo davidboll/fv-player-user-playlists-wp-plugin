@@ -1,0 +1,282 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FVPUPE\n"
+"POT-Creation-Date: 2023-12-04 14:31+0700\n"
+"PO-Revision-Date: 2023-12-04 14:30+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: classes/FVPUPEPlugin.php:20
+msgid "Save"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:21
+msgid "Loading"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:22 classes/Shortcode.php:41
+msgid "Add to playlist"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:23
+msgid "Create new playlist"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:24
+msgid "Cancel"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:25
+msgid "Playlist name"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:26
+msgid "Add playlist"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:27
+msgid "Save playlist"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:28
+msgid "Yes"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:29
+msgid "Delete playlist"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:30
+msgid "Are you sure you want to delete this playlist?"
+msgstr ""
+
+#: classes/FVPUPEPlugin.php:31 classes/Playlist.php:368
+msgid "Edit playlist"
+msgstr ""
+
+#: classes/Playlist.php:52
+msgid "The playlist has been deleted."
+msgstr ""
+
+#: classes/Playlist.php:75
+msgid "Playlist videos"
+msgstr ""
+
+#: classes/Playlist.php:128
+msgid ""
+"You have to be logged in to add to a playlist. Please login and try again."
+msgstr ""
+
+#: classes/Playlist.php:136
+msgid "No video found."
+msgstr ""
+
+#: classes/Playlist.php:141
+msgid "The changes have been saved."
+msgstr ""
+
+#: classes/Playlist.php:159 classes/Playlist.php:270
+msgid "Video added to"
+msgstr ""
+
+#: classes/Playlist.php:165
+msgid "Video removed from"
+msgstr ""
+
+#: classes/Playlist.php:194 classes/Playlist.php:284
+msgid "Playlist name is mandatory."
+msgstr ""
+
+#: classes/Playlist.php:208
+msgid "Playlist has been saved."
+msgstr ""
+
+#: classes/Playlist.php:229
+msgid ""
+"You have to be logged in to create a playlist. Please login and try again."
+msgstr ""
+
+#: classes/Playlist.php:248
+msgid "You already have a playlist with this name."
+msgstr ""
+
+#: classes/Playlist.php:276
+msgid "An error occured, please try again."
+msgstr ""
+
+#: classes/Playlist.php:327
+msgid "No playlists were found."
+msgstr ""
+
+#: classes/Playlist.php:348
+msgid "You need to login to add to playlists."
+msgstr ""
+
+#: classes/Playlist.php:361
+msgctxt "Post type general name"
+msgid "User playlists"
+msgstr ""
+
+#: classes/Playlist.php:362
+msgctxt "Post type singular name"
+msgid "User playlist"
+msgstr ""
+
+#: classes/Playlist.php:363
+msgctxt "Admin Menu text"
+msgid "User playlists"
+msgstr ""
+
+#: classes/Playlist.php:364
+msgctxt "Add New on Toolbar"
+msgid "User playlist"
+msgstr ""
+
+#: classes/Playlist.php:365
+msgid "Add new"
+msgstr ""
+
+#: classes/Playlist.php:366
+msgid "Add new playlist"
+msgstr ""
+
+#: classes/Playlist.php:367
+msgid "New playlist"
+msgstr ""
+
+#: classes/Playlist.php:369
+msgid "View playlist"
+msgstr ""
+
+#: classes/Playlist.php:370
+msgid "All playlists"
+msgstr ""
+
+#: classes/Playlist.php:371
+msgid "Search playlists"
+msgstr ""
+
+#: classes/Playlist.php:372
+msgid "Parent playlists:"
+msgstr ""
+
+#: classes/Playlist.php:373
+msgid "No playlists found."
+msgstr ""
+
+#: classes/Playlist.php:374
+msgid "No playlists found in trash."
+msgstr ""
+
+#: classes/Playlist.php:375
+msgctxt ""
+"Overrides the “Featured Image” phrase for this post type. Added in 4.3"
+msgid "Playlist cover image"
+msgstr ""
+
+#: classes/Playlist.php:376
+msgctxt ""
+"Overrides the “Set featured image” phrase for this post type. Added in 4.3"
+msgid "Set cover image"
+msgstr ""
+
+#: classes/Playlist.php:377
+msgctxt ""
+"Overrides the “Remove featured image” phrase for this post type. Added in "
+"4.3"
+msgid "Remove cover image"
+msgstr ""
+
+#: classes/Playlist.php:378
+msgctxt ""
+"Overrides the “Use as featured image” phrase for this post type. Added in "
+"4.3"
+msgid "Use as cover image"
+msgstr ""
+
+#: classes/Playlist.php:379
+msgctxt ""
+"The post type archive label used in nav menus. Default “Post Archives”. "
+"Added in 4.4"
+msgid "Playlists archives"
+msgstr ""
+
+#: classes/Playlist.php:380
+msgctxt ""
+"Overrides the “Insert into post”/”Insert into page” phrase (used when "
+"inserting media into a post). Added in 4.4"
+msgid "Insert into playlist"
+msgstr ""
+
+#: classes/Playlist.php:381
+msgctxt ""
+"Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
+"when viewing media attached to a post). Added in 4.4"
+msgid "Uploaded to this playlist"
+msgstr ""
+
+#: classes/Playlist.php:382
+msgctxt ""
+"Screen reader text for the filter links heading on the post type listing "
+"screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+msgid "Filter playlists list"
+msgstr ""
+
+#: classes/Playlist.php:383
+msgctxt ""
+"Screen reader text for the pagination heading on the post type listing "
+"screen. Default “Posts list navigation”/”Pages list navigation”. Added in "
+"4.4"
+msgid "Playlists list navigation"
+msgstr ""
+
+#: classes/Playlist.php:384
+msgctxt ""
+"Screen reader text for the items list heading on the post type listing "
+"screen. Default “Posts list”/”Pages list”. Added in 4.4"
+msgid "Playlists list"
+msgstr ""
+
+#: classes/Shortcode.php:57
+msgid "Edit name"
+msgstr ""
+
+#: classes/Shortcode.php:57
+msgid "Delete"
+msgstr ""
+
+#: classes/Shortcode.php:74
+msgid "Empty playlist"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "FV Player, User Playlist Extension"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Let your users create and manage their own playlists."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Eyecon Media"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://eyeconmedia.se"
+msgstr ""
